@@ -90,3 +90,11 @@ target/
 
 myenv
 
+
+# Local development and generated outputs
+.pytest_cache/
+.ruff_cache/
+.venv/
+artifacts/
+mlruns/
+mlflow.db

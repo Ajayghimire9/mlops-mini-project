@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: python -m reviewops.pipeline
+    deps:
+      - reviewops/pipeline.py
+      - examples/texts.csv
+    outs:
+      - artifacts/model.joblib
+    metrics:
+      - artifacts/metrics.json
